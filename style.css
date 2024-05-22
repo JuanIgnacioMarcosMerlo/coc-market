@@ -329,6 +329,11 @@ footer li {
     margin-left: 10px;
 }
 
+/*estilo login*/
+.custom-login-btn {
+    width: 100px; 
+}
+
 @media (max-width: 768px) {
     .footer-row {
         flex-direction: column;
