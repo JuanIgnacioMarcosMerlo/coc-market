@@ -22,7 +22,7 @@ body, header, main, footer {
 header {
     width: 100%;
     height: 5rem; 
-    background-color: #ffffff; 
+    background-color: #FFFFFF; 
     display: flex;
     justify-content: space-between; 
     align-items: center; 
@@ -31,17 +31,24 @@ header {
     box-shadow: 0 0 0.5rem rgb(83 78 76 / 50%);
 }
 
-.logo {
+.navbar-brand {
     width: 100%;
     position: relative;
+    background-color: none;
 }
 
-.logo img {
+
+.navbar-brand img{
     width: 10rem;
     height: 100%;
     padding: 0;
     position: relative;
+    background-color: none;   
 }
+.navbar-brand a {
+    background-color: none;
+}
+
 
 /* Banners */
 
@@ -85,7 +92,7 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #fff;
+    background-color: #FFFFFF;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -115,18 +122,6 @@ img {
 }
 
 
-
-.productos_destacados {
-    position: relative;
-}
-
-.productos_destacados img{
-    height: 7rem;
-    width: 100%;
-    padding: 1rem;
-    border-radius: 2rem;
-    
-}
 
 /* Main  */
 
@@ -181,8 +176,16 @@ main {
 #cards button {
     margin-top: auto;
     width: 9rem;
-    height: 2rem;
+    height: 2.5rem;
     margin-left: 3.5rem;
+    border-radius: 2rem;
+    justify-content: center;
+}
+
+#cards button span{
+    margin: 0;
+    font-size: medium;
+    
 }
 
 
@@ -561,6 +564,11 @@ footer li {
 
 /* LOGINN----- */
 
+.logologin {
+    width: 10rem;
+    margin: 2rem;
+}
+
 .login-container {
     background-color: #fff;
     padding: 20px;
@@ -609,6 +617,12 @@ button {
 
 button:hover {
     background-color: #218838;
+}
+
+
+.logina {
+    color: #666;
+    text-decoration: none;
 }
 
 /* Media Mobile */
@@ -660,15 +674,33 @@ button:hover {
         margin-left: 43%;
      }
     
-    .logo { width: auto;
+     .navbar-brand { width: auto;
         position: relative;
+        
             
     }
     
-    .logo img {width: 5rem;
+
+    .navbar-brand img {width: 8rem;
     height:100%;
     padding: 0;
     position: relative;
+    
+
+    }
+
+    .logologin {
+        margin-left: 10%;
+        
+    }
+
+    .logina {
+        color: #666;
+        text-decoration: none;
+    }
+    .containerlogin img {
+        padding: 2rem;
+        
     }
     
     .productos_destacados {
@@ -713,7 +745,8 @@ button:hover {
         object-fit: contain; /* Ensures images maintain aspect ratio and cover the designated space */
     }
     
- 
+  
+
 }
     .footer {
         overflow: hidden;
