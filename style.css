@@ -121,7 +121,16 @@ img {
     color: #999;
 }
 
-
+.productos_destacados{
+    position: relative;
+}
+.productos_destacados img{
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 2rem;
+    
+}
 
 /* Main  */
 
