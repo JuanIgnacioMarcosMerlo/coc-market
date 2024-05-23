@@ -17,6 +17,13 @@ body, header, main, footer {
     min-width: 400px;
 }
 
+  
+body {
+    background: url('/images/logo/bg.jpg') repeat;
+       
+    background-size: 10rem 10rem;
+}
+
 /* Header */
 
 header {
@@ -27,15 +34,19 @@ header {
     justify-content: space-between; 
     align-items: center; 
     top: 0;
+    padding: 0;
     z-index: 1000;
     box-shadow: 0 0 0.5rem rgb(83 78 76 / 50%);
 }
+
 
 .navbar-brand {
     width: 100%;
     position: relative;
     background-color: none;
+    padding: 0;
 }
+
 
 
 .navbar-brand img{
@@ -45,9 +56,7 @@ header {
     position: relative;
     background-color: none;   
 }
-.navbar-brand a {
-    background-color: none;
-}
+
 
 
 /* Banners */
@@ -694,6 +703,7 @@ button:hover {
     height:100%;
     padding: 0;
     position: relative;
+    margin-left: 6.7rem;
     
 
     }
@@ -738,7 +748,7 @@ button:hover {
         width: calc(17rem - 0.5rem); /* Adjust width for four cards in a row with gap */
         text-align: center;
         margin: 0.5rem;
-        margin-left: 6rem;
+        margin-left: 3.5rem;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
@@ -754,7 +764,11 @@ button:hover {
         object-fit: contain; /* Ensures images maintain aspect ratio and cover the designated space */
     }
     
-  
+    body {
+        background: url('/images/logo/bg.jpg') repeat;
+           
+        background-size: 10rem 10rem;
+    }
 
 }
     .footer {
