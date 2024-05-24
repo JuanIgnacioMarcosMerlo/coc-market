@@ -11,6 +11,25 @@
     flex-direction: row;
     justify-content: space-around;
 }
+.cart {
+    position: relative;
+    width: 128px;
+    height: 128px;
+}
+
+.quanCart {
+
+    padding: 20px;
+    position: absolute;
+    background-color: black;
+    color: white;
+    border-radius:  100%;
+    
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-size: 2em;
+}
 .productsContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

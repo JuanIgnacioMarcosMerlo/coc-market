@@ -1,5 +1,4 @@
 let dataCart = JSON.parse(localStorage.getItem("dataCart")) || [];
-
 function updateTotal() {
   const TOTAL_ALL_PRODUCTS = document.querySelector(".totalAllProducts");
   const priceTotal =
@@ -18,7 +17,7 @@ function updateCartCount() {
   document.querySelector('.quantityCart').textContent = totalQuantity;
 }
 
-export function addCart() {
+export function addCart(updateCartQuantity) {
   try {
     const QUANTITY_PRODUCT = document.querySelector(".quantityProduct");
     const ADD_PRODUCT = document.querySelector(".addProduct");
@@ -65,6 +64,7 @@ export function addCart() {
         }
 
         localStorage.setItem("dataCart", JSON.stringify(dataCart));
+        updateCartQuantity();
 
         QUANTITY_PRODUCT.value = "1";
         updateTotal();
@@ -98,6 +98,7 @@ export function addCart() {
       PRODUCT_CART_TOTAL.textContent = parseFloat(total).toFixed(2);
 
       const DELETE_PRODUCT = document.createElement("button");
+      DELETE_PRODUCT.classList.add("deleteProduct");
       DELETE_PRODUCT.textContent = "Eliminar";
       DELETE_PRODUCT.addEventListener("click", () => {
         const idOfProductToDelete = String(PRODUCT_CART.id);
@@ -107,6 +108,7 @@ export function addCart() {
         );
         dataCart = newDataCart;
         localStorage.setItem("dataCart", JSON.stringify(newDataCart));
+        updateCartQuantity();
         CART_ITEM.removeChild(PRODUCT_CART);
 
         updateTotal();
