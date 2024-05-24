@@ -4,26 +4,30 @@
     box-sizing: border-box;
 }
 .header{
+    
+    
     width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-#productsContainer{
+.productsContainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-#cards{
+.cards{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#image{
+.image{
     width: 200px;
     height: 200px;
 }
+
+  
 
 /* COLORES
 #B02248
